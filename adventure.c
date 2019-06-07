@@ -5,7 +5,8 @@ int main (void)
 
 char input[256], start[256], ticket [256], flight [256], tractor[256], search [256],riddle[256],destiny[256], bear[256], mystery[256], train[256], song[256], decision[256];
 //char input[256], ticket[256];
-
+int a =3;
+int b =2;
 int bitcoin;
 bitcoin= crypto(a, b); 
 
