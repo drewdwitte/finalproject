@@ -7,7 +7,7 @@ char input[256], start[256], ticket [256], flight [256], tractor[256], search [2
 //char input[256], ticket[256];
 
 int bitcoin;
-bitcoin=5;
+bitcoin= crypto(a, b); 
 
 
 
