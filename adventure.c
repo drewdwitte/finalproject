@@ -37,6 +37,11 @@ else if (strcmp(ticket, "b")==0)
   return 0;
 }
 
+  else
+{
+  return 0;
+}
+  
 printf("\nYou board the plane and enjoy a pleasant flight for several hours.\nYou then notice that somebody on the plane is watching you very closely. He must be part of the mob. How will you proceed?\na: you fight the mafioso.\nb: You jump out of the plane.\n");
 
 fgets (input, 256, stdin);
@@ -53,6 +58,11 @@ else if (strcmp(flight, "b")==0)
   printf("\nYou rush into the pilot's cabin and steal a parachute. You then wrench open the door and are sucked out.\n\nYou land and realize you are in Iowa.You are approached by a farmer in a tractor\n You need that tractor to get to New York but the tractor costs five bitcoins.\nWhat will you do?\na:work for the farmer at a rate of 1 bitcoin a day and buy the tractor.\nb:Steal the tractor.\n");
 }
 
+  else
+{
+  return 0;
+}
+  
 fgets (input, 256, stdin);
 sscanf (input, "%s", tractor);
 
@@ -74,7 +84,11 @@ else if (strcmp(tractor, "b")==0)
  printf("You reach down, grab an ear of corn, and chuck at the farmer's head.\nHe falls off the tractor, unconcious, and you steal the tractor.\n");
 }
 
-printf("\nYou take your tractor down the old town road and ride till you reach New York.\nNow in New York, you must decide how to find the mob boss. How will you do it?\na:You shout out in the middle of Time Square if anybody knows the mob boss.\nb: You go to, Capelletti's, one of the local dive bars and pose as a recruit.\n ");
+else
+{
+  return 0;
+}
+  printf("\nYou take your tractor down the old town road and ride till you reach New York.\nNow in New York, you must decide how to find the mob boss. How will you do it?\na:You shout out in the middle of Time Square if anybody knows the mob boss.\nb: You go to, Capelletti's, one of the local dive bars and pose as a recruit.\n ");
 
 fgets (input, 256, stdin);
 sscanf (input, "%s", search);
@@ -91,7 +105,11 @@ else if (strcmp(search, "b")==0)
   printf("You enter the restaurant and walk up to the bartender.As you're posing as a new member, he is about to take you to the boss before he stops.\nHe says that in order to prove ypu're in the gang, you have to answer the mafia riddle.\n\n");
 }
 
-printf("What has hands but doesn't clap?\na: a clock.\nb: a veteran with PTSD.\n");
+else
+{
+  return 0;
+}
+  printf("What has hands but doesn't clap?\na: a clock.\nb: a veteran with PTSD.\n");
 
 fgets (input, 256, stdin);
 sscanf (input, "%s", riddle);
@@ -107,7 +125,11 @@ else if (strcmp (riddle, "b")==0)
   return 0;
 }
 
-printf("In the backroom, the boss is sitting facing away from you.\nHe turns his chair around to reveal that your dog was the boss the entire time!\nHow will you take this news?\na: Join him in a life of crime.\nb: Take him back home.\n");
+else
+{
+  return 0;
+}
+  printf("In the backroom, the boss is sitting facing away from you.\nHe turns his chair around to reveal that your dog was the boss the entire time!\nHow will you take this news?\na: Join him in a life of crime.\nb: Take him back home.\n");
 
 fgets (input, 256, stdin);
 sscanf (input, "%s", riddle);
@@ -144,6 +166,11 @@ else if (strcmp(bear, "b")==0)
   printf("On a whim you try to talk with it.\nSurprisingly, it talks back!\nIt tells you that his name is Jerome the bear.\nYou talk to him about your quest to get to New York and get your dog back from the mafia boss.\nJerome is overwhelmed because he too has a vendetta to settle with the boss.\nHe won't reveal to you what kind of vendetta he has yet but maybe someday.\nJerome helps lead you back to civilizatio and will now accompany you to New York");
 }
 
+  else
+{
+  return 0;
+}
+  
 printf("You and Jerome decide to take the train from Oklahoma to New York. Thankfully, the trains in Oklahoma are Bear friendly.\nAs you get on the train you are greeted by a friendly grandmother and then proceed to sit down.\nYou then give your ticket to the ticket puncher and you excitedly say how you're going to New York. He creepily responds with oh don't worry sir you'll get to your destination.\nThroughout the train ride you notice one man playing with a pocketknife staring at you out of the corner of his eye.\nHalfway through the ride Jerome tells you that he smells a killer. It has to be someone from the mob!\nYou have to find out who it is before they can capture you!\n Who is it?\na: The ticket puncher \nb: The man with the knife\nc: The grandma\n");
 fgets (input, 256, stdin);
 sscanf (input, "%s", mystery);
@@ -164,6 +191,11 @@ else if (strcmp(mystery, "c")==0)
 {
   printf ("You recall the grandma politely greeting you when you got on the train.\nNO ONE HEADING TO NEW YORK IS THAT NICE!\nAs you turn around to face the grandma she has already pulled out a tommy gun. She fires a barrage of bullets over your head and hide behind your seat.\nBefore she is able to get over to you Jerome is able to tackle the elderly gang member and toss her gun away.\nAfter you and Jerome tie her up she exclaims that you will never defeat the boss.\nThe both of you are able to return to your seats and continue your journey.");
 }
+  
+  else
+{
+  return 0;
+}
 
 printf ("Shortly after your incident with the grandma you realize the train isn't driving normally.\nYou go up to the train driver to see what's wrong. When you see him you notice he had been severely injured from one of the stray tommy gun bullets. He can no loger operate the train.\nIn the distance you see another train driving straight towards you!\nIf you don't do something there will be a head on collision with the two trains.\nWhat will you do?\na: Try to steer the train onto another track\nb: Try to brake the train\n");
 fgets (input, 256, stdin);
@@ -180,7 +212,11 @@ else if (strcmp(train, "b")==0)
   return 0;
 }
 
-printf ("After a long train ride you and Jerome have finally made it to New York.\nYou realize you have no idea on where the secret hideout is for the mafia.\nThankfully, Jerome was able to procure the secret address from the elderly woman while you were dealing with the train.\nYou head over to the address and you end up in the baddest neighborhood in New York.\nYou walk up to the to a small door in a backalley and you knock on it three times.\nAfter a long pause a voice asks you what you want. You respond with asking to see the mafia boss.\n The man pauses and finally responds with saying if you can answer the secret mafia question.\nWhat is our favorite song?\na: The Godfather Theme\nb: I Want it That Way by The Backstreet Boys/nc: Girls Just Want to Have Fun by Cindi Lauper\n");
+else
+{
+  return 0;
+}
+  printf ("After a long train ride you and Jerome have finally made it to New York.\nYou realize you have no idea on where the secret hideout is for the mafia.\nThankfully, Jerome was able to procure the secret address from the elderly woman while you were dealing with the train.\nYou head over to the address and you end up in the baddest neighborhood in New York.\nYou walk up to the to a small door in a backalley and you knock on it three times.\nAfter a long pause a voice asks you what you want. You respond with asking to see the mafia boss.\n The man pauses and finally responds with saying if you can answer the secret mafia question.\nWhat is our favorite song?\na: The Godfather Theme\nb: I Want it That Way by The Backstreet Boys/nc: Girls Just Want to Have Fun by Cindi Lauper\n");
 fgets (input, 256, stdin);
 sscanf (input, "%s", song);
 
@@ -199,6 +235,11 @@ else if (strcmp(song, "c")==0)
   return 0;
 }
 
+  else
+{
+  return 0;
+}
+  
 printf ("You and Jerome arrive in a well lit area with paintings of what you can assume to be previous mafia bosses.\nThere is a nice velvet carpet that appears to lead you to a big office.\nThis is it. This is the boss's room.\n As you slowly open the doors it is revealed that no one is in the room only an elegant desk and an empty chair.\nHowever, something does catch your eye. On the wall there is a picture. It is of the woods and in it just one lone bear. This bear seems to be oddly familiar. It almost looks like.....................JEROME!\nAs you turn around to face him he is backed up by about twenty mafia members.\nHe tells you thathe's sorry but there was no other way.\nHow could you have not noticed it was all so obvious.\nHow he got the address and how the man at the door reacted.\nJerome tells you that it's the end of the line and you only had two options.\nThe first one being to join him and be apart of the mafia for a lifetime of service.\nThe other option being that you would be taken hostage by the mafia and you would be used as ransom.\nWhat will you do?\na: Join the Mafia\nb: Accept being kidnapped\nc: Sing to him I Want it That Way\n");
 fgets (input, 256, stdin);
 sscanf (input, "%s", decision);
